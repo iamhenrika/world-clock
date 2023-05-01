@@ -6,9 +6,9 @@ function updateTime() {
     let chicagoTimeElement = chicagoElement.querySelector(".time");
     chicagoTime = moment().tz("America/Chicago");
 
-    chicagoDateElement.innerHTML = chicagoTime.format("MMMM Do YYYY");
+    chicagoDateElement.innerHTML = chicagoTime.format("dddd, MMMM Do, YYYY");
     chicagoTimeElement.innerHTML = chicagoTime.format(
-      "h:mm:ss [<small>]A[</small>]"
+      "hh:mm:ss [<small>]A[</small>]"
     );
   }
 
@@ -19,8 +19,8 @@ function updateTime() {
     let rioTimeElement = rioElement.querySelector(".time");
     rioTime = moment().tz("Etc/GMT+3");
 
-    rioDateElement.innerHTML = rioTime.format("MMMM Do YYYY");
-    rioTimeElement.innerHTML = rioTime.format("h:mm:ss [<small>]A[</small>]");
+    rioDateElement.innerHTML = rioTime.format("dddd, MMMM Do, YYYY");
+    rioTimeElement.innerHTML = rioTime.format("hh:mm:ss [<small>]A[</small>]");
   }
 
   // Lagos
@@ -30,9 +30,9 @@ function updateTime() {
     let lagosTimeElement = lagosElement.querySelector(".time");
     lagosTime = moment().tz("Africa/Lagos");
 
-    lagosDateElement.innerHTML = lagosTime.format("MMMM Do YYYY");
+    lagosDateElement.innerHTML = lagosTime.format("dddd, MMMM Do, YYYY");
     lagosTimeElement.innerHTML = lagosTime.format(
-      "h:mm:ss [<small>]A[</small>]"
+      "hh:mm:ss [<small>]A[</small>]"
     );
   }
 
@@ -43,9 +43,9 @@ function updateTime() {
     let parisTimeElement = parisElement.querySelector(".time");
     parisTime = moment().tz("Europe/Paris");
 
-    parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
+    parisDateElement.innerHTML = parisTime.format("dddd, MMMM Do YYYY");
     parisTimeElement.innerHTML = parisTime.format(
-      "h:mm:ss [<small>]A[</small>]"
+      "hh:mm:ss [<small>]A[</small>]"
     );
   }
 
@@ -56,7 +56,7 @@ function updateTime() {
     let hongKongTimeElement = hongKongElement.querySelector(".time");
     hongKongTime = moment().tz("Asia/Hong_Kong");
 
-    hongKongDateElement.innerHTML = hongKongTime.format("MMMM Do YYYY");
+    hongKongDateElement.innerHTML = hongKongTime.format("dddd, MMMM Do YYYY");
     hongKongTimeElement.innerHTML = hongKongTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
@@ -75,9 +75,9 @@ function updateCity(event) {
   <div class="city">
     <div>
       <h2>${cityName}</h2>
-      <div class="date">${cityTime.format("MMMM	Do YYYY")}</div>
+      <div class="date">${cityTime.format("dddd, MMMM Do, YYYY")}</div>
     </div>
-    <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
+    <div class="time">${cityTime.format("hh:mm:ss")} <small>${cityTime.format(
     "A"
   )}</small></div>
   </div>

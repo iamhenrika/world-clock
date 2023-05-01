@@ -1,9 +1,11 @@
 body {
-  background-color: #f9f7fe;
-  font-family: sans-serif;
+  background-color: #e4f1fe;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
 }
+
 .container {
-  background: white;
+  background:  #003200;
   max-width: 600px;
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -20,7 +22,7 @@ body {
 }
 
 .cities:last-child {
-    border: none;
+  border: none;
 }
 
 .date {
@@ -43,12 +45,13 @@ select {
   border-radius: 4px;
   padding: 10px;
   font-size: 18px;
+  color: #22313f;
 }
 
 h1 {
   text-align: center;
-  font-family: sans-serif;
-  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
 }
 
 h2 {
@@ -59,9 +62,10 @@ h2 {
 footer {
   text-align: center;
   font-size: 16px;
-  color: rgba(0,0,0,0.4);
+  color: rgba(0, 0, 0, 0.9);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  color: #f76b8a;
 }
