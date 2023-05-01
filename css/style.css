@@ -11,7 +11,7 @@ body {
   border-radius: 10px;
 }
 
-.cities {
+.city {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
