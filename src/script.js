@@ -1,4 +1,41 @@
 function updateTime() {
+  // Chicago
+  let chicagoElement = document.querySelector("#chicago");
+  if (chicagoElement) {
+    let chicagoDateElement = chicagoElement.querySelector(".date");
+    let chicagoTimeElement = chicagoElement.querySelector(".time");
+    chicagoTime = moment().tz("America/Chicago");
+
+    chicagoDateElement.innerHTML = chicagoTime.format("MMMM Do YYYY");
+    chicagoTimeElement.innerHTML = chicagoTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
+  // Rio
+  let rioElement = document.querySelector("#rio");
+  if (rioElement) {
+    let rioDateElement = rioElement.querySelector(".date");
+    let rioTimeElement = rioElement.querySelector(".time");
+    rioTime = moment().tz("Etc/GMT+3");
+
+    rioDateElement.innerHTML = rioTime.format("MMMM Do YYYY");
+    rioTimeElement.innerHTML = rioTime.format("h:mm:ss [<small>]A[</small>]");
+  }
+
+  // Lagos
+  let lagosElement = document.querySelector("#lagos");
+  if (lagosElement) {
+    let lagosDateElement = lagosElement.querySelector(".date");
+    let lagosTimeElement = lagosElement.querySelector(".time");
+    lagosTime = moment().tz("Africa/Lagos");
+
+    lagosDateElement.innerHTML = lagosTime.format("MMMM Do YYYY");
+    lagosTimeElement.innerHTML = lagosTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
   // Paris
   let parisElement = document.querySelector("#paris");
   if (parisElement) {
@@ -29,7 +66,7 @@ function updateTime() {
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current") {
-    cityTimeZone = moment.tz.guess()
+    cityTimeZone = moment.tz.guess();
   }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
