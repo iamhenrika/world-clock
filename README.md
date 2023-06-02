@@ -1,6 +1,6 @@
 # world-clock
  
- a world clock app that shows the time current time in a few countries.
+ a world clock app that shows the current time in a few locations.
  
 ![alt text](https://i.imgur.com/6IeD2ne.png)
 
